@@ -32,3 +32,41 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## What is this
+
+- This application is an indicators-based account based marketing tool, that uses collates Linkedin comments, news articles, and other proprietary pieces and attaches them to the company. Think of Zoominfo with Scoops for companies. Infers usage of certain tools or strategies.
+
+## Proposed stack
+
+- React, NextJS, SASS frontesnd
+- Supabase backend
+
+## To-do
+
+3 - Build out scrapersu
+
+- Leverages Linkedin API or Scrapes Linkedin real time to search description
+- Scrapes Google, filters keywords
+- (find Google search APIs)
+
+1 - Build out backend
+
+- Establish set of test data
+- Company, location, Linkedin description (be able to cross-link with other profiles later, using AI/ML), news profile (1,2,3, however many)
+  - Relations
+    - Name: one to one
+    - Company/name: many to one
+    - Name/title: one to ones
+- Build sample queries
+  - Search account -> finds companies
+  - Search by keyword and account -> finds particular keywords
+- Set up Trpc
+  s
+  2 - Build out frontend
+- Home page
+- Search bar for name, company
+  - Results pull from DB, show in real time
+
+Search functionality - Supabase - https://supabase.com/docs/guides/database/full-text-search
+Supabase - Next.JS - https://supabase.com/docs/guides/with-nextjs
